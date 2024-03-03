@@ -1,0 +1,220 @@
+body { 
+  background-image: url('fondo.jpg'); 
+  background-size: cover; 
+  background-repeat: repeat; 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.animated-box {
+  width: 600px;
+  height: 90px;
+  background-image: url('estrellas.gif');
+  border: 2px solid black;
+  border-radius: 10px;
+  animation: bounce 2s infinite alternate; 
+}
+
+.centered-text {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3fee09; 
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.reload-button {
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: -9.26%; 
+  left: -20%; 
+}
+
+.reload-button {
+  background-color: #ff00ff; 
+  color: #ffffff; 
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 30px; 
+  border: none;
+  border-radius: 30px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.reload-button:hover {
+  background-color: #f50606; 
+}
+
+.rocket-container {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+}
+
+.rocket {
+  width: 100%;
+  height: 100%;
+  animation: fly 5s linear infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-200vh);
+  }
+}
+
+.top-left {
+  top: -50px;
+  left: -50px;
+}
+
+.top-right {
+  top: -50px;
+  right: -50px;
+}
+
+.bottom-left {
+  bottom: -50px;
+  left: -50px;
+}
+
+.bottom-right {
+  bottom: -50px;
+  right: -50px;
+}
+
+.welcome-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  top: 10%; 
+  left: 45%; 
+  transform: translateX(-50%);
+  margin-top: 50px; 
+  animation: rotate 5s linear infinite; 
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateX(-20%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-20%) rotate(360deg); 
+  }
+}
+
+.planet-img {
+  position: absolute;
+  width: 100px; 
+  height: auto;
+}
+
+.planet1 {
+  top: 46.30%;
+  left: 5.21%;
+}
+
+.planet2 {
+  top: 27.78%; 
+  left: 13.02%; 
+  transform: translate(-50%, -50%);
+}
+
+.planet3 {
+  top: 46.30%; 
+  left: 78.13%; 
+}
+.estrella{
+  top: 10px;
+  left: 15px;
+}
+
+button {
+  background: black;
+  cursor: pointer;
+  border: none;
+  padding: 16px 32px;
+  color: azure;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 12px;
+  top:1000px;
+  left:1000px;
+}
+
+button:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+  background-size: 800%;
+  border-radius: 12px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+      background-position: 0 0;
+  }
+  50% {
+      background-position: 400% 0;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}
+
+.rotate-button {
+  position: fixed;
+  bottom: 18.52%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.publicidad-button {
+  position: fixed;
+  bottom: 18.52%; 
+  left: 40%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
